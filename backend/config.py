@@ -7,8 +7,8 @@ ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
 
 # MongoDB Configuration
-MONGO_URL = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
-DB_NAME = os.environ.get('DB_NAME', 'veo_automation')
+MONGO_URL = os.environ.get('MONGO_URL', 'mongodb+srv://shankarkola9999_db_user:Z9hG1GUl5gGWFbcD@veomaster.3qiiqox.mongodb.net/veomaster_db?appName=veomaster')
+DB_NAME = os.environ.get('DB_NAME', 'veomaster_db')
 
 # Google Flow Credentials
 GOOGLE_FLOW_EMAIL = os.environ.get('GOOGLE_FLOW_EMAIL', 'Sameer@techhub.codes')

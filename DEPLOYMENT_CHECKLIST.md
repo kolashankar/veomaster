@@ -96,8 +96,9 @@ STORAGE_BASE_DIR=/tmp
    - **Environment**: Python 3
    - **Build Command**:
      ```
-     cd backend && pip install --upgrade pip && pip install -r requirements.txt && playwright install chromium && playwright install-deps
+     cd backend && pip install --upgrade pip && pip install -r requirements.txt && playwright install chromium
      ```
+     ⚠️ **IMPORTANT**: Do NOT include `playwright install-deps` - it requires root access!
    - **Start Command**:
      ```
      cd backend && uvicorn server:app --host 0.0.0.0 --port 10000

@@ -1,5 +1,16 @@
 # ✅ Render Deployment Checklist
 
+## 🚨 CRITICAL FIX APPLIED
+
+**Playwright Installation Issue**: The build command has been updated to remove `playwright install-deps` which requires root access. This was causing the "Authentication failure" error. See [PLAYWRIGHT_FIX.md](./PLAYWRIGHT_FIX.md) for details.
+
+**Updated Build Command** (working):
+```bash
+cd backend && pip install --upgrade pip && pip install -r requirements.txt && playwright install chromium
+```
+
+---
+
 ## Pre-Deployment Checklist
 
 ### 1. Code Preparation

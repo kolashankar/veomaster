@@ -10,23 +10,25 @@ load_dotenv(ROOT_DIR / '.env')
 MONGO_URL = os.environ.get('MONGO_URL', 'mongodb://localhost:27017')
 DB_NAME = os.environ.get('DB_NAME', 'veo_automation')
 
-# Google Flow Credentials (from user)
-GOOGLE_FLOW_EMAIL = "Sameer@techhub.codes"
-GOOGLE_FLOW_PASSWORD = "Hhub@#11"
-GOOGLE_FLOW_URL = "https://labs.google/fx/tools/flow"
+# Google Flow Credentials
+GOOGLE_FLOW_EMAIL = os.environ.get('GOOGLE_FLOW_EMAIL', 'Sameer@techhub.codes')
+GOOGLE_FLOW_PASSWORD = os.environ.get('GOOGLE_FLOW_PASSWORD', 'Hhub@#11')
+GOOGLE_FLOW_URL = os.environ.get('GOOGLE_FLOW_URL', 'https://labs.google/fx/tools/flow')
 
-# Storage Configuration (Mock credentials for now)
-CLOUDFLARE_ACCOUNT_ID = "mock_account_id_123456"
-CLOUDFLARE_ACCESS_KEY = "mock_access_key_abcdef"
-CLOUDFLARE_SECRET_KEY = "mock_secret_key_xyz789"
-CLOUDFLARE_BUCKET_NAME = "veo-videos-temp"
-CLOUDFLARE_R2_TTL_HOURS = 2
+# Cloudflare R2 Storage Configuration
+CLOUDFLARE_ACCOUNT_ID = os.environ.get('CLOUDFLARE_ACCOUNT_ID', '')
+CLOUDFLARE_ACCESS_KEY = os.environ.get('CLOUDFLARE_ACCESS_KEY', '')
+CLOUDFLARE_SECRET_KEY = os.environ.get('CLOUDFLARE_SECRET_KEY', '')
+CLOUDFLARE_BUCKET_NAME = os.environ.get('CLOUDFLARE_BUCKET_NAME', 'veo-videos-temp')
+CLOUDFLARE_R2_ENDPOINT = os.environ.get('CLOUDFLARE_R2_ENDPOINT', '')
+CLOUDFLARE_R2_TTL_HOURS = int(os.environ.get('CLOUDFLARE_R2_TTL_HOURS', '2'))
 
-# Telegram Configuration (Mock credentials)
-TELEGRAM_BOT_TOKEN = "mock_bot_token_123456:ABCdefGHIjklMNOpqrSTUvwxYZ"
-TELEGRAM_CHANNEL_ID = "mock_channel_-1001234567890"
-TELEGRAM_API_ID = "mock_api_id_12345678"
-TELEGRAM_API_HASH = "mock_api_hash_abcdef1234567890"
+# Telegram Bot Configuration
+TELEGRAM_BOT_TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', '')
+TELEGRAM_CHANNEL_ID = os.environ.get('TELEGRAM_CHANNEL_ID', '')
+TELEGRAM_LOG_CHANNEL = os.environ.get('TELEGRAM_LOG_CHANNEL', '')
+TELEGRAM_API_ID = os.environ.get('TELEGRAM_API_ID', '')
+TELEGRAM_API_HASH = os.environ.get('TELEGRAM_API_HASH', '')
 
 # File Storage
 TEMP_UPLOAD_DIR = Path("/app/temp_uploads")

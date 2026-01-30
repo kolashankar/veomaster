@@ -193,7 +193,7 @@ class GoogleFlowService:
             await asyncio.sleep(5)
             
             # Wait for navigation back to Flow
-            await self.page.wait_for_url(f'**/flow**', timeout=20000)
+            await self.page.wait_for_url('**/flow**', timeout=20000)
             
             logger.info("✅ Login successful")
             await self._save_session()

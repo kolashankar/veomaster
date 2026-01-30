@@ -211,7 +211,7 @@ class UpscalerService:
                 if video.upscaled:
                     logger.info(f"Video {video_id} already upscaled")
                     if task_id:
-                        task_manager.add_task_log(task_id, f"Video already upscaled, skipping", "info")
+                        task_manager.add_task_log(task_id, "Video already upscaled, skipping", "info")
                         task_manager.increment_completed(task_id)
                     results[video_id] = True
                     continue
@@ -223,7 +223,7 @@ class UpscalerService:
                 if not input_path or not input_path.exists():
                     logger.info(f"Downloading video {video_id} from Telegram...")
                     if task_id:
-                        task_manager.add_task_log(task_id, f"Downloading 720p video from storage...", "info")
+                        task_manager.add_task_log(task_id, "Downloading 720p video from storage...", "info")
                     
                     input_path = TEMP_DOWNLOAD_DIR / f"{video_id}_720p.mp4"
                     
@@ -235,14 +235,14 @@ class UpscalerService:
                         if not success:
                             logger.error(f"Failed to download video {video_id}")
                             if task_id:
-                                task_manager.add_task_log(task_id, f"Failed to download video", "error")
+                                task_manager.add_task_log(task_id, "Failed to download video", "error")
                                 task_manager.increment_failed(task_id)
                             results[video_id] = False
                             continue
                     else:
                         logger.error(f"No Telegram file_id for video {video_id}")
                         if task_id:
-                            task_manager.add_task_log(task_id, f"No storage URL found for video", "error")
+                            task_manager.add_task_log(task_id, "No storage URL found for video", "error")
                             task_manager.increment_failed(task_id)
                         results[video_id] = False
                         continue
@@ -254,7 +254,7 @@ class UpscalerService:
                 # Upscale
                 logger.info(f"Upscaling video {video_id}...")
                 if task_id:
-                    task_manager.add_task_log(task_id, f"Applying Lanczos filter and upscaling to 4K...", "info")
+                    task_manager.add_task_log(task_id, "Applying Lanczos filter and upscaling to 4K...", "info")
                 
                 success = await self.upscale_video(input_path, output_path, quality_preset)
                 
@@ -262,7 +262,7 @@ class UpscalerService:
                     # Upload 4K version to storage
                     logger.info(f"Uploading 4K video {video_id} to storage...")
                     if task_id:
-                        task_manager.add_task_log(task_id, f"Uploading 4K video to storage...", "info")
+                        task_manager.add_task_log(task_id, "Uploading 4K video to storage...", "info")
                     
                     # Upload to R2
                     r2_url = await self.storage_service.upload_to_r2(output_path, output_filename)
@@ -281,13 +281,13 @@ class UpscalerService:
                     
                     logger.info(f"✅ Video {video_id} upscaled successfully")
                     if task_id:
-                        task_manager.add_task_log(task_id, f"✅ Video upscaled successfully", "success")
+                        task_manager.add_task_log(task_id, "✅ Video upscaled successfully", "success")
                         task_manager.increment_completed(task_id)
                     results[video_id] = True
                 else:
                     logger.error(f"Failed to upscale video {video_id}")
                     if task_id:
-                        task_manager.add_task_log(task_id, f"FFmpeg upscaling failed", "error")
+                        task_manager.add_task_log(task_id, "FFmpeg upscaling failed", "error")
                         task_manager.increment_failed(task_id)
                     results[video_id] = False
                     

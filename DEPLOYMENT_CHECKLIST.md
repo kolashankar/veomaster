@@ -85,9 +85,12 @@ TELEGRAM_CHANNEL_ID=-1003779605786
 TELEGRAM_LOG_CHANNEL=-1003836225813
 CORS_ORIGINS=*
 STORAGE_BASE_DIR=/tmp
+PLAYWRIGHT_SKIP_BROWSER_GC=1
 ```
 
-⚠️ **CRITICAL**: Don't forget `STORAGE_BASE_DIR=/tmp`
+⚠️ **CRITICAL**: 
+- Don't forget `STORAGE_BASE_DIR=/tmp` (fixes permission errors)
+- Add `PLAYWRIGHT_SKIP_BROWSER_GC=1` (improves Playwright stability)
 
 #### Step 4: Deploy
 - Click "Create Web Service" or "Deploy"

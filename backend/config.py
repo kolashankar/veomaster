@@ -19,7 +19,7 @@ GOOGLE_FLOW_URL = os.environ.get('GOOGLE_FLOW_URL', 'https://labs.google/fx/tool
 CLOUDFLARE_ACCOUNT_ID = os.environ.get('CLOUDFLARE_ACCOUNT_ID', '')
 CLOUDFLARE_ACCESS_KEY = os.environ.get('CLOUDFLARE_ACCESS_KEY', '')
 CLOUDFLARE_SECRET_KEY = os.environ.get('CLOUDFLARE_SECRET_KEY', '')
-CLOUDFLARE_BUCKET_NAME = os.environ.get('CLOUDFLARE_BUCKET_NAME', 'veo-videos-temp')
+CLOUDFLARE_BUCKET_NAME = os.environ.get('CLOUDFLARE_BUCKET_NAME', 'veobucket')
 CLOUDFLARE_R2_ENDPOINT = os.environ.get('CLOUDFLARE_R2_ENDPOINT', '')
 CLOUDFLARE_R2_TTL_HOURS = int(os.environ.get('CLOUDFLARE_R2_TTL_HOURS', '2'))
 

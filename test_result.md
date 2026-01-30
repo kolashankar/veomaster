@@ -140,6 +140,18 @@ backend:
         agent: "main"
         comment: "Removed hardcoded Google Flow credentials, now using environment variables."
 
+  - task: "Python Linting Issues"
+    implemented: true
+    working: true
+    file: "/app/backend/services/"
+    stuck_count: 0
+    priority: "low"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Fixed 9 f-string linting issues using ruff auto-fix. All files now pass linting."
+
   - task: "Backend Service Restart"
     implemented: true
     working: true

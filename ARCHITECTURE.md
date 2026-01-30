@@ -1,6 +1,6 @@
 # Google Flow Video Automation Platform - System Architecture
 
-## 1. System Overview
+### 1. System Overview
 
 ### 1.1 High-Level Architecture
 

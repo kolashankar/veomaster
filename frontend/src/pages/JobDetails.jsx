@@ -37,14 +37,7 @@ const JobDetails = () => {
   const [regeneratingVideos, setRegeneratingVideos] = useState(new Set());
   const [lastSelectedIndex, setLastSelectedIndex] = useState(null);
 
-  useEffect(() => {
-    fetchJobData();
-    // Poll for updates every 5 seconds
-    const interval = setInterval(fetchJobData, 5000);
-    return () => clearInterval(interval);
-  }, [jobId]);
-
-  const fetchJobData = async () => {
+  const fetchJobData = useCallback(async () => {
     try {
       const [jobData, videosData] = await Promise.all([
         jobAPI.getJob(jobId),
@@ -64,7 +57,14 @@ const JobDetails = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [jobId, downloadFolderName]);
+
+  useEffect(() => {
+    fetchJobData();
+    // Poll for updates every 5 seconds
+    const interval = setInterval(fetchJobData, 5000);
+    return () => clearInterval(interval);
+  }, [fetchJobData]);
 
   const handleToggleSelection = async (videoId, event = null) => {
     const completedVideos = videos.filter(v => v.status === 'completed');

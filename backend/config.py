@@ -30,12 +30,12 @@ TELEGRAM_LOG_CHANNEL = os.environ.get('TELEGRAM_LOG_CHANNEL', '')
 TELEGRAM_API_ID = os.environ.get('TELEGRAM_API_ID', '')
 TELEGRAM_API_HASH = os.environ.get('TELEGRAM_API_HASH', '')
 
-# File Storage
-TEMP_UPLOAD_DIR = Path("/app/temp_uploads")
-TEMP_DOWNLOAD_DIR = Path("/app/temp_downloads")
-LOGS_DIR = Path("/app/logs")
+# File Storage (Render-safe)
+BASE_DIR = Path(__file__).resolve().parent
+TEMP_UPLOAD_DIR = BASE_DIR / "temp_uploads"
+TEMP_DOWNLOAD_DIR = BASE_DIR / "temp_downloads"
+LOGS_DIR = BASE_DIR / "logs"
 
-# Create directories
 TEMP_UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 TEMP_DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
 LOGS_DIR.mkdir(parents=True, exist_ok=True)

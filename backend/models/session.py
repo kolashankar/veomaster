@@ -1,6 +1,7 @@
 from pydantic import BaseModel, Field, ConfigDict
 from typing import List, Dict, Any, Optional
 from datetime import datetime, timezone
+import os
 
 
 class GoogleFlowSession(BaseModel):
@@ -12,8 +13,8 @@ class GoogleFlowSession(BaseModel):
     user_agent: Optional[str] = None
     last_login_at: Optional[datetime] = None
     last_used_at: Optional[datetime] = None
-    login_email: str = "Sameer@techhub.codes"
-    login_password: str = "Hhub@#11"  # In production, use encrypted storage
+    login_email: str = os.environ.get('GOOGLE_FLOW_EMAIL', 'Sameer@techhub.codes')
+    login_password: str = os.environ.get('GOOGLE_FLOW_PASSWORD', 'Hhub@#11')
 
 
 class SessionStatus(BaseModel):

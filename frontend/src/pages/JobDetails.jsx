@@ -522,22 +522,6 @@ const JobDetails = () => {
             </div>
           </div>
         </div>
-                >
-                  <Sparkles className="w-4 h-4 mr-2" />
-                  Upscale to 4K
-                </Button>
-
-                <Button
-                  onClick={() => handleDownload('720p')}
-                  disabled={selectedVideos.size === 0 || isDownloading}
-                >
-                  <Download className="w-4 h-4 mr-2" />
-                  {isDownloading ? 'Downloading...' : 'Download Selected'}
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
       )}
     </div>
   );

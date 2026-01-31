@@ -186,7 +186,7 @@ async def list_jobs(status: Optional[JobStatus] = None, limit: int = 50):
 
 
 @router.post("/{job_id}/start")
-async def start_job(job_id: str, background_tasks: BackgroundTasks):
+async def start_job(job_id: str):
     """
     Start the automation process for a job
     Runs video generation in background
@@ -205,11 +205,8 @@ async def start_job(job_id: str, background_tasks: BackgroundTasks):
         if job.status == JobStatus.PROCESSING:
             return {"message": "Job is already processing", "started": False}
         
-        # Start background task
-        background_tasks.add_task(
-            google_flow_service.generate_videos_for_job,
-            job_id
-        )
+        # Start background task using asyncio
+        asyncio.create_task(google_flow_service.generate_videos_for_job(job_id))
         
         # Estimate time (rough estimate: 5 minutes per image)
         estimated_minutes = job.total_images * 5

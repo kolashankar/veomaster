@@ -101,7 +101,7 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
-user_problem_statement: "Fix 400 error when uploading files to job endpoint. User encountered error 'Failed to create job: Request failed with status code 400' on production. Root cause was incorrect MongoDB credentials and case-sensitive prompt parsing regex."
+user_problem_statement: "Fix 400 error when uploading files to job endpoint. User encountered error 'Failed to create job: Request failed with status code 400' on production. Root cause was incorrect MongoDB credentials and case-sensitive prompt parsing regex. FIXED: Updated credentials and made regex case-insensitive."
 
 backend:
   - task: "MongoDB Atlas Credentials Fix"
@@ -110,7 +110,7 @@ backend:
     file: "/app/backend/.env"
     stuck_count: 0
     priority: "critical"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: false
         agent: "user"
@@ -125,7 +125,7 @@ backend:
     file: "/app/backend/.env"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: true
         agent: "main"
@@ -137,7 +137,7 @@ backend:
     file: "/app/backend/services/video_processor.py"
     stuck_count: 0
     priority: "critical"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: false
         agent: "main"
@@ -152,7 +152,7 @@ backend:
     file: "/app/backend/routes/jobs.py"
     stuck_count: 0
     priority: "critical"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: true
         agent: "main"
@@ -203,12 +203,31 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Verify complete upload workflow with real test files"
-    - "Test job creation and video generation start"
+    - "MongoDB Atlas Credentials Fix"
+    - "Case-Insensitive Prompt Parsing"
+    - "File Upload Endpoint Testing"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
 
 agent_communication:
   - agent: "main"
-    message: "✅ CRITICAL BUG FIXED! Root cause identified: 1) MongoDB credentials mismatch - updated to production credentials, 2) Case-sensitive regex in prompt parser - made case-insensitive with (?i) flag. Tested successfully with user's actual files (14 images + 14 prompts = 28 video records created)."
+    message: |
+      ✅ CRITICAL BUG FIXED! 
+      
+      Root causes identified and resolved:
+      1) MongoDB credentials mismatch - Updated MONGO_URL to production credentials from Render
+      2) Case-sensitive regex in prompt parser - Added (?i) flag to make case-insensitive
+      
+      Testing completed:
+      - Created test job successfully
+      - Uploaded user's actual files (folder1.zip with 14 images + prompts text file)
+      - All 28 video records created correctly (2 per image/prompt pair)
+      - Verified parsing handles both "Prompt_N" and "prompt_N" formats
+      
+      Test files:
+      - folder1.zip: Contains 1.jpeg through 14.jpeg (ss.jpeg correctly ignored)
+      - prompts_test.txt: Contains Prompt_1 through Prompt_14 in Hindi/Devanagari
+      
+      Ready for comprehensive backend testing with the testing agent.
+      Test script available at: /app/test_upload_workflow.sh

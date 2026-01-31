@@ -139,15 +139,18 @@ backend:
 
   - task: "Refactored Main Workflow"
     implemented: true
-    working: "NA"
+    working: false
     file: "/app/backend/services/google_flow_service.py"
-    stuck_count: 0
+    stuck_count: 1
     priority: "critical"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "WORKFLOW CHANGE: Completely refactored generate_videos_for_job() to: 1) Create ONE project with job name, 2) Configure settings once, 3) Batch upload all prompts, 4) Start generation for entire batch. This matches Google Flow's batch processing UI better."
+      - working: false
+        agent: "testing"
+        comment: "❌ EXTERNAL SERVICE ISSUE: Main workflow fails due to Google Flow login timeout. Backend APIs work perfectly - job creation, file upload, database records all successful. Issue is with external Google Flow service accessibility, not code implementation."
 
   - task: "Test Files Preparation"
     implemented: true

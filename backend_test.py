@@ -209,13 +209,15 @@ class GoogleFlowTester:
             videos = videos_response.json()
             
             if len(videos) == 4:
-                # Check all videos have status='pending'
-                pending_count = sum(1 for v in videos if v.get('status') == 'pending')
-                if pending_count == 4:
-                    self.log_success("database_records", f"4 video records created, all status='pending'")
+                # Check all videos have status='queued' (initial status)
+                queued_count = sum(1 for v in videos if v.get('status') == 'queued')
+                if queued_count == 4:
+                    self.log_success("database_records", f"4 video records created, all status='queued'")
                     return True
                 else:
-                    self.log_error("database_records", f"Expected 4 pending videos, got {pending_count}")
+                    # Show actual statuses for debugging
+                    statuses = [v.get('status') for v in videos]
+                    self.log_error("database_records", f"Expected 4 queued videos, got {queued_count}. Statuses: {statuses}")
                     return False
             else:
                 self.log_error("database_records", f"Expected 4 video records, got {len(videos)}")

@@ -101,7 +101,7 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
-user_problem_statement: "Fix 400 error when uploading files to job endpoint. User encountered error 'Failed to create job: Request failed with status code 400' on production. Root cause was incorrect MongoDB credentials and case-sensitive prompt parsing regex. FIXED: Updated credentials and made regex case-insensitive."
+user_problem_statement: "Fix Google Flow video generation - videos showing as 'Queued for generation' but not actually being generated in Google Flow. Root cause: After file upload, the /api/jobs/{job_id}/start endpoint was never being called to trigger the automation. FIXING: Adding automatic startJob() call after successful upload + testing with 2 images and 2 prompts."
 
 backend:
   - task: "MongoDB Atlas Credentials Fix"

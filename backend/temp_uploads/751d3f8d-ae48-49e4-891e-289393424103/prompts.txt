@@ -1,0 +1,83 @@
+Prompt_1: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "मैं डॉक्टर सर्वपल्ली राधाकृष्णन, इंडिया का पहला वाइस-प्रेसिडेंट। आज मैं आपको बताऊंगा कि यह पद कैसे काम करता है - इसका टर्म, वैकेंसी और पावर्स।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_2: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "वाइस-प्रेसिडेंट का टर्म पांच साल का होता है। लेकिन टर्म खत्म होने के बाद भी वे तब तक सीट नहीं छोड़ते जब तक सक्सेसर चार्ज न ले ले।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_3: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "अगर वे चाहें, तो अपनी मर्जी से कभी भी रेजिग्नेशन दे सकते हैं। उन्हें अपना रेजिग्नेशन लेटर केवल 'प्रेसिडेंट' को ही एड्रेस करना होता है, किसी और को नहीं।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_4: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "प्रेसिडेंट को हटाने के लिए इम्पीचमेंट चाहिए, लेकिन हमें हटाना आसान है। राज्यसभा का एक रेजोल्यूशन और लोकसभा की सिंपल सहमति ही काफी है।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_5: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "ऐसा रेजोल्यूशन लाने से पहले उन्हें चौदह दिन का 'एडवांस नोटिस' देना अनिवार्य है। यह प्रक्रिया केवल और केवल राज्यसभा में ही शुरू की जा सकती है।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_6: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "रिमूवल के लिए राज्यसभा की 'इफेक्टिव मेजॉरिटी' चाहिए, यानी उपस्थित और वोटिंग करने वाले मेंबर्स में से आधे से ज्यादा। फिर लोकसभा की सिंपल सहमति लेनी होती है।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_7: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "अगर वैकेंसी टर्म एक्सपायर होने से हुई है, तो इलेक्शन पहले ही हो जाना चाहिए। अगर रेजिग्नेशन या डेथ से हुई है, तो 'एज सून एज पॉसिबल' चुनाव कराना होगा।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_8: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "वैकेंसी भरने के लिए चुना गया नया वाइस-प्रेसिडेंट बचे हुए समय के लिए नहीं, बल्कि पूरे पांच साल के टर्म के लिए ऑफिस होल्ड करता है।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_9: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "इनके फंक्शंस लोकसभा स्पीकर जैसे होते हैं। वे राज्यसभा के 'एक्स-ऑफिसियो चेयरमैन' हैं, यानी जो भी वी पी बनेगा, वह अपने आप राज्यसभा का चेयरमैन बन जाएगा।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_10: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "वे फर्स्ट इंस्टेंस में वोट नहीं देते। लेकिन अगर पक्ष और विपक्ष के वोट बराबर हो जाएं, यानी 'टाई' हो जाए, तो वे अपना 'कास्टिंग वोट' दे सकते हैं।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_11: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "जब प्रेसिडेंट का पद खाली होता है - चाहे रेजिग्नेशन, रिमूवल, या डेथ के कारण - तब वाइस-प्रेसिडेंट 'एक्टिंग प्रेसिडेंट' के रूप में काम करते हैं।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_12: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "नाइंटीन सिक्सटी-नाइन में वी वी गिरि ने एक्टिंग प्रेसिडेंट के रूप में काम किया था। इस दौरान वी पी प्रेसिडेंट की सारी पावर्स का इस्तेमाल करते हैं।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_13: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "जब वी पी एक्टिंग प्रेसिडेंट बनते हैं, तो राज्यसभा की चेयरमैनशिप खाली हो जाती है। उस दौरान 'डिप्टी चेयरमैन' हाउस की कार्यवाही संभालते हैं।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.
+
+Prompt_14: Animate the fictional character in the image looks at camera and speaks in Devanagari Hindi: "अमेरिकन वी पी प्रेसिडेंट की खाली सीट पर बचे हुए पूरे टर्म के लिए बैठते हैं, लेकिन इंडियन वी पी सिर्फ तब तक, जब तक नया प्रेसिडेंट न चुन लिया जाए।".
+
+Maintain a pleasant low background music.
+
+Fix the camera position. Strictly no subtitles.

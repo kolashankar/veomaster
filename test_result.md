@@ -143,7 +143,7 @@ backend:
     file: "/app/backend/services/video_processor.py"
     stuck_count: 0
     priority: "critical"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: false
         agent: "main"
@@ -151,6 +151,9 @@ backend:
       - working: true
         agent: "main"
         comment: "Added (?i) flag to regex pattern to make it case-insensitive. Now supports both 'Prompt_N' and 'prompt_N' formats."
+      - working: true
+        agent: "testing"
+        comment: "✅ VERIFIED: Case-insensitive parsing working perfectly! Successfully parsed all 14 prompts from 'Prompt_1' through 'Prompt_14' format in user's test file. Regex pattern (?i)prompt_(\d+)\s*:\s*(.+?) correctly handles both uppercase and lowercase variants."
 
   - task: "File Upload Endpoint Testing"
     implemented: true

@@ -310,9 +310,9 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Google Flow Automation Start Endpoint"
-    - "Dashboard Auto-Start Integration"
-    - "Auto-Start Video Generation"
+    - "Google Flow Project Creation with Job Name"
+    - "Batch Upload Prompts to Single Project"
+    - "Refactored Main Workflow"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"

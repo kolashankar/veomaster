@@ -62,7 +62,7 @@ class GoogleFlowService:
             )
             
             # Check for existing session
-            session = await db_service.get_active_session()
+            session = await db_service.get_session()
             
             if session and session.session_active:
                 logger.info("Found active session, attempting to restore...")

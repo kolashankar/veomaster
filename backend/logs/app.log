@@ -901,3 +901,592 @@
 2026-01-31 10:00:17 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/479de3c2-9364-4370-bc3e-653a148288ad - 200 (65.94ms)
 2026-01-31 10:00:17 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/5a0fce14-53e6-489f-92f6-126ff0a2eacf - 200 (129.02ms)
 2026-01-31 10:00:17 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/479de3c2-9364-4370-bc3e-653a148288ad - 200 (126.59ms)
+2026-01-31 10:13:04 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:13:04 | INFO     | server | info:104 | 🚀 Google Flow Video Automation Platform STARTING
+2026-01-31 10:13:04 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:13:04 | INFO     | server | info:104 | ✅ Phase 1: Foundation - Database, Models, Storage initialized
+2026-01-31 10:13:04 | INFO     | server | info:104 | ✅ Phase 2: Backend Services - Automation & Upscaling ready
+2026-01-31 10:13:04 | INFO     | server | info:104 | ✅ Phase 3: Frontend - Dashboard & Video Gallery
+2026-01-31 10:13:04 | INFO     | server | info:104 | ✅ Phase 4: Automation Workflow - Browser automation & Error recovery
+2026-01-31 10:13:04 | INFO     | server | info:104 | ✅ Phase 5: Selection & Download - Video management
+2026-01-31 10:13:04 | INFO     | server | info:104 | ✅ Phase 6: Production Polish - UI/UX & Performance optimizations
+2026-01-31 10:13:04 | INFO     | server | info:104 | ✅ Logging System - Comprehensive logging with rotation
+2026-01-31 10:13:04 | INFO     | server | info:104 | 🌐 API Server: http://0.0.0.0:8001
+2026-01-31 10:13:04 | INFO     | server | info:104 | 📝 Logs Directory: /app/logs/
+2026-01-31 10:13:04 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:16:57 | INFO     | server | info:104 | 📨 Incoming: POST /api/jobs/create
+2026-01-31 10:16:59 | INFO     | server | info:104 | ✅ Success: POST /api/jobs/create - 200 (2262.11ms)
+2026-01-31 10:16:59 | INFO     | server | info:104 | 📨 Incoming: POST /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb/upload
+2026-01-31 10:17:01 | INFO     | server | info:104 | ✅ Success: POST /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb/upload - 200 (1518.65ms)
+2026-01-31 10:17:01 | INFO     | server | info:104 | 📨 Incoming: POST /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb/start
+2026-01-31 10:17:01 | INFO     | server | info:104 | ✅ Success: POST /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb/start - 200 (235.54ms)
+2026-01-31 10:17:06 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:17:06 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.12ms)
+2026-01-31 10:17:12 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:17:12 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (234.97ms)
+2026-01-31 10:17:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:17:17 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (234.92ms)
+2026-01-31 10:17:22 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:17:23 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (234.87ms)
+2026-01-31 10:17:28 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:17:28 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.54ms)
+2026-01-31 10:17:33 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:17:33 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.34ms)
+2026-01-31 10:17:34 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:17:34 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.63ms)
+2026-01-31 10:18:22 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:18:22 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (235.49ms)
+2026-01-31 10:18:22 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:18:23 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (235.37ms)
+2026-01-31 10:18:28 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:18:28 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (235.12ms)
+2026-01-31 10:18:33 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:18:33 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (237.98ms)
+2026-01-31 10:18:37 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:18:37 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (235.52ms)
+2026-01-31 10:18:41 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:18:41 | INFO     | server | info:104 | 👋 Application shutdown complete
+2026-01-31 10:18:41 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:18:44 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:18:44 | INFO     | server | info:104 | 🚀 Google Flow Video Automation Platform STARTING
+2026-01-31 10:18:44 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:18:44 | INFO     | server | info:104 | ✅ Phase 1: Foundation - Database, Models, Storage initialized
+2026-01-31 10:18:44 | INFO     | server | info:104 | ✅ Phase 2: Backend Services - Automation & Upscaling ready
+2026-01-31 10:18:44 | INFO     | server | info:104 | ✅ Phase 3: Frontend - Dashboard & Video Gallery
+2026-01-31 10:18:44 | INFO     | server | info:104 | ✅ Phase 4: Automation Workflow - Browser automation & Error recovery
+2026-01-31 10:18:44 | INFO     | server | info:104 | ✅ Phase 5: Selection & Download - Video management
+2026-01-31 10:18:44 | INFO     | server | info:104 | ✅ Phase 6: Production Polish - UI/UX & Performance optimizations
+2026-01-31 10:18:44 | INFO     | server | info:104 | ✅ Logging System - Comprehensive logging with rotation
+2026-01-31 10:18:44 | INFO     | server | info:104 | 🌐 API Server: http://0.0.0.0:8001
+2026-01-31 10:18:44 | INFO     | server | info:104 | 📝 Logs Directory: /app/logs/
+2026-01-31 10:18:44 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:18:47 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:18:47 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:18:49 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (2242.96ms)
+2026-01-31 10:18:49 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (2258.94ms)
+2026-01-31 10:18:50 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:18:50 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:18:50 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.25ms)
+2026-01-31 10:18:50 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.84ms)
+2026-01-31 10:18:55 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:18:55 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:18:55 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.09ms)
+2026-01-31 10:18:55 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (236.22ms)
+2026-01-31 10:19:00 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:00 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:00 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.87ms)
+2026-01-31 10:19:00 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (236.07ms)
+2026-01-31 10:19:05 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:05 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:05 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.22ms)
+2026-01-31 10:19:05 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.06ms)
+2026-01-31 10:19:05 | INFO     | server | info:104 | 📨 Incoming: POST /api/jobs/create
+2026-01-31 10:19:06 | INFO     | server | info:104 | ✅ Success: POST /api/jobs/create - 200 (245.33ms)
+2026-01-31 10:19:06 | INFO     | server | info:104 | 📨 Incoming: POST /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5/upload
+2026-01-31 10:19:07 | INFO     | server | info:104 | ✅ Success: POST /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5/upload - 200 (1491.97ms)
+2026-01-31 10:19:07 | INFO     | server | info:104 | 📨 Incoming: POST /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5/start
+2026-01-31 10:19:08 | INFO     | server | info:104 | ✅ Success: POST /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5/start - 200 (232.07ms)
+2026-01-31 10:19:10 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:10 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:10 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.29ms)
+2026-01-31 10:19:10 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (249.23ms)
+2026-01-31 10:19:13 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5
+2026-01-31 10:19:13 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5 - 200 (231.35ms)
+2026-01-31 10:19:15 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:15 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:15 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (233.04ms)
+2026-01-31 10:19:15 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.19ms)
+2026-01-31 10:19:19 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5
+2026-01-31 10:19:19 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5 - 200 (235.40ms)
+2026-01-31 10:19:20 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:20 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:20 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.46ms)
+2026-01-31 10:19:20 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.56ms)
+2026-01-31 10:19:24 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5
+2026-01-31 10:19:24 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5 - 200 (231.27ms)
+2026-01-31 10:19:25 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:25 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:25 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.07ms)
+2026-01-31 10:19:25 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (236.14ms)
+2026-01-31 10:19:29 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5
+2026-01-31 10:19:30 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5 - 200 (236.73ms)
+2026-01-31 10:19:30 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:30 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:30 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.35ms)
+2026-01-31 10:19:30 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.98ms)
+2026-01-31 10:19:35 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:35 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:35 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5
+2026-01-31 10:19:35 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.30ms)
+2026-01-31 10:19:35 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (237.11ms)
+2026-01-31 10:19:36 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5 - 200 (1499.20ms)
+2026-01-31 10:19:40 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:40 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:40 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.87ms)
+2026-01-31 10:19:40 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (236.24ms)
+2026-01-31 10:19:41 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5
+2026-01-31 10:19:42 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5 - 200 (235.02ms)
+2026-01-31 10:19:42 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/f712ff77-4781-4741-b6b6-2cf36dc20ff5
+2026-01-31 10:19:42 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/f712ff77-4781-4741-b6b6-2cf36dc20ff5 - 200 (235.52ms)
+2026-01-31 10:19:45 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:45 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:45 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.60ms)
+2026-01-31 10:19:45 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.03ms)
+2026-01-31 10:19:50 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:50 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:50 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.71ms)
+2026-01-31 10:19:50 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (234.88ms)
+2026-01-31 10:19:55 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:55 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:19:55 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.64ms)
+2026-01-31 10:19:55 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.73ms)
+2026-01-31 10:20:00 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:20:00 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:20:00 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (237.64ms)
+2026-01-31 10:20:00 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (240.54ms)
+2026-01-31 10:20:05 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:20:05 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:20:05 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.05ms)
+2026-01-31 10:20:05 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.42ms)
+2026-01-31 10:20:10 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:20:10 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:20:10 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.58ms)
+2026-01-31 10:20:10 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (234.75ms)
+2026-01-31 10:20:15 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:20:15 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:20:15 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.71ms)
+2026-01-31 10:20:15 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (234.67ms)
+2026-01-31 10:20:20 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:20:20 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:20:20 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.00ms)
+2026-01-31 10:20:20 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (234.77ms)
+2026-01-31 10:20:31 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:20:31 | INFO     | server | info:104 | 👋 Application shutdown complete
+2026-01-31 10:20:31 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:20:33 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:20:33 | INFO     | server | info:104 | 🚀 Google Flow Video Automation Platform STARTING
+2026-01-31 10:20:33 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:20:33 | INFO     | server | info:104 | ✅ Phase 1: Foundation - Database, Models, Storage initialized
+2026-01-31 10:20:33 | INFO     | server | info:104 | ✅ Phase 2: Backend Services - Automation & Upscaling ready
+2026-01-31 10:20:33 | INFO     | server | info:104 | ✅ Phase 3: Frontend - Dashboard & Video Gallery
+2026-01-31 10:20:33 | INFO     | server | info:104 | ✅ Phase 4: Automation Workflow - Browser automation & Error recovery
+2026-01-31 10:20:33 | INFO     | server | info:104 | ✅ Phase 5: Selection & Download - Video management
+2026-01-31 10:20:33 | INFO     | server | info:104 | ✅ Phase 6: Production Polish - UI/UX & Performance optimizations
+2026-01-31 10:20:33 | INFO     | server | info:104 | ✅ Logging System - Comprehensive logging with rotation
+2026-01-31 10:20:33 | INFO     | server | info:104 | 🌐 API Server: http://0.0.0.0:8001
+2026-01-31 10:20:33 | INFO     | server | info:104 | 📝 Logs Directory: /app/logs/
+2026-01-31 10:20:33 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:20:36 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:20:36 | INFO     | server | info:104 | 👋 Application shutdown complete
+2026-01-31 10:20:36 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:20:38 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:20:38 | INFO     | server | info:104 | 🚀 Google Flow Video Automation Platform STARTING
+2026-01-31 10:20:38 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:20:38 | INFO     | server | info:104 | ✅ Phase 1: Foundation - Database, Models, Storage initialized
+2026-01-31 10:20:38 | INFO     | server | info:104 | ✅ Phase 2: Backend Services - Automation & Upscaling ready
+2026-01-31 10:20:38 | INFO     | server | info:104 | ✅ Phase 3: Frontend - Dashboard & Video Gallery
+2026-01-31 10:20:38 | INFO     | server | info:104 | ✅ Phase 4: Automation Workflow - Browser automation & Error recovery
+2026-01-31 10:20:38 | INFO     | server | info:104 | ✅ Phase 5: Selection & Download - Video management
+2026-01-31 10:20:38 | INFO     | server | info:104 | ✅ Phase 6: Production Polish - UI/UX & Performance optimizations
+2026-01-31 10:20:38 | INFO     | server | info:104 | ✅ Logging System - Comprehensive logging with rotation
+2026-01-31 10:20:38 | INFO     | server | info:104 | 🌐 API Server: http://0.0.0.0:8001
+2026-01-31 10:20:38 | INFO     | server | info:104 | 📝 Logs Directory: /app/logs/
+2026-01-31 10:20:38 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:20:49 | INFO     | server | info:104 | 📨 Incoming: POST /api/jobs/create
+2026-01-31 10:20:51 | INFO     | server | info:104 | ✅ Success: POST /api/jobs/create - 200 (2261.04ms)
+2026-01-31 10:20:51 | INFO     | server | info:104 | 📨 Incoming: POST /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59/upload
+2026-01-31 10:20:53 | INFO     | server | info:104 | ✅ Success: POST /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59/upload - 200 (1516.26ms)
+2026-01-31 10:20:53 | INFO     | server | info:104 | 📨 Incoming: POST /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59/start
+2026-01-31 10:20:53 | INFO     | server | info:104 | ✅ Success: POST /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59/start - 200 (235.70ms)
+2026-01-31 10:20:58 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59
+2026-01-31 10:20:58 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59 - 200 (298.62ms)
+2026-01-31 10:21:04 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59
+2026-01-31 10:21:05 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59 - 200 (296.74ms)
+2026-01-31 10:21:11 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59
+2026-01-31 10:21:11 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59 - 200 (293.09ms)
+2026-01-31 10:21:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:21:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:21:17 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (290.64ms)
+2026-01-31 10:21:18 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59
+2026-01-31 10:21:18 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59 - 200 (285.74ms)
+2026-01-31 10:21:19 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (1886.95ms)
+2026-01-31 10:21:24 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59
+2026-01-31 10:21:24 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59 - 200 (255.54ms)
+2026-01-31 10:21:31 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59
+2026-01-31 10:21:31 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59 - 200 (244.68ms)
+2026-01-31 10:21:31 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/1fb12299-2d9d-4c2a-9af2-d04abd4ead59
+2026-01-31 10:21:31 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/1fb12299-2d9d-4c2a-9af2-d04abd4ead59 - 200 (245.26ms)
+2026-01-31 10:22:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:22:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:22:17 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (236.69ms)
+2026-01-31 10:22:17 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (245.58ms)
+2026-01-31 10:23:06 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:23:06 | INFO     | server | info:104 | 👋 Application shutdown complete
+2026-01-31 10:23:06 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:23:07 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:23:07 | INFO     | server | info:104 | 🚀 Google Flow Video Automation Platform STARTING
+2026-01-31 10:23:07 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:23:07 | INFO     | server | info:104 | ✅ Phase 1: Foundation - Database, Models, Storage initialized
+2026-01-31 10:23:07 | INFO     | server | info:104 | ✅ Phase 2: Backend Services - Automation & Upscaling ready
+2026-01-31 10:23:07 | INFO     | server | info:104 | ✅ Phase 3: Frontend - Dashboard & Video Gallery
+2026-01-31 10:23:07 | INFO     | server | info:104 | ✅ Phase 4: Automation Workflow - Browser automation & Error recovery
+2026-01-31 10:23:07 | INFO     | server | info:104 | ✅ Phase 5: Selection & Download - Video management
+2026-01-31 10:23:07 | INFO     | server | info:104 | ✅ Phase 6: Production Polish - UI/UX & Performance optimizations
+2026-01-31 10:23:07 | INFO     | server | info:104 | ✅ Logging System - Comprehensive logging with rotation
+2026-01-31 10:23:07 | INFO     | server | info:104 | 🌐 API Server: http://0.0.0.0:8001
+2026-01-31 10:23:07 | INFO     | server | info:104 | 📝 Logs Directory: /app/logs/
+2026-01-31 10:23:07 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:23:17 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:23:17 | INFO     | server | info:104 | 👋 Application shutdown complete
+2026-01-31 10:23:17 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:23:18 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:23:18 | INFO     | server | info:104 | 🚀 Google Flow Video Automation Platform STARTING
+2026-01-31 10:23:18 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:23:18 | INFO     | server | info:104 | ✅ Phase 1: Foundation - Database, Models, Storage initialized
+2026-01-31 10:23:18 | INFO     | server | info:104 | ✅ Phase 2: Backend Services - Automation & Upscaling ready
+2026-01-31 10:23:18 | INFO     | server | info:104 | ✅ Phase 3: Frontend - Dashboard & Video Gallery
+2026-01-31 10:23:18 | INFO     | server | info:104 | ✅ Phase 4: Automation Workflow - Browser automation & Error recovery
+2026-01-31 10:23:18 | INFO     | server | info:104 | ✅ Phase 5: Selection & Download - Video management
+2026-01-31 10:23:18 | INFO     | server | info:104 | ✅ Phase 6: Production Polish - UI/UX & Performance optimizations
+2026-01-31 10:23:18 | INFO     | server | info:104 | ✅ Logging System - Comprehensive logging with rotation
+2026-01-31 10:23:18 | INFO     | server | info:104 | 🌐 API Server: http://0.0.0.0:8001
+2026-01-31 10:23:18 | INFO     | server | info:104 | 📝 Logs Directory: /app/logs/
+2026-01-31 10:23:18 | INFO     | server | info:104 | ================================================================================
+2026-01-31 10:23:18 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:23:18 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:23:20 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (2198.50ms)
+2026-01-31 10:23:20 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (2213.57ms)
+2026-01-31 10:23:52 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:23:52 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:23:52 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.22ms)
+2026-01-31 10:23:52 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.72ms)
+2026-01-31 10:23:54 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:23:54 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:23:54 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.41ms)
+2026-01-31 10:23:54 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.50ms)
+2026-01-31 10:23:54 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:23:54 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:23:55 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.78ms)
+2026-01-31 10:23:55 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (233.75ms)
+2026-01-31 10:23:55 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:23:55 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:23:55 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.64ms)
+2026-01-31 10:23:55 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.68ms)
+2026-01-31 10:24:00 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:00 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:00 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.35ms)
+2026-01-31 10:24:00 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.32ms)
+2026-01-31 10:24:05 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:05 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:05 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.92ms)
+2026-01-31 10:24:05 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (229.13ms)
+2026-01-31 10:24:10 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:10 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:10 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.53ms)
+2026-01-31 10:24:10 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.15ms)
+2026-01-31 10:24:15 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:15 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:15 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.49ms)
+2026-01-31 10:24:15 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.51ms)
+2026-01-31 10:24:20 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:20 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:20 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.17ms)
+2026-01-31 10:24:20 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.56ms)
+2026-01-31 10:24:25 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:25 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:25 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.25ms)
+2026-01-31 10:24:25 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.43ms)
+2026-01-31 10:24:30 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:30 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:30 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (240.28ms)
+2026-01-31 10:24:30 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.83ms)
+2026-01-31 10:24:35 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:35 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:35 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.19ms)
+2026-01-31 10:24:35 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.94ms)
+2026-01-31 10:24:40 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:40 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:40 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.01ms)
+2026-01-31 10:24:40 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.46ms)
+2026-01-31 10:24:45 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:45 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:45 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.08ms)
+2026-01-31 10:24:45 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.08ms)
+2026-01-31 10:24:50 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:50 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:50 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.02ms)
+2026-01-31 10:24:50 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.08ms)
+2026-01-31 10:24:55 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:55 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:24:55 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.75ms)
+2026-01-31 10:24:55 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.84ms)
+2026-01-31 10:25:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:25:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:25:17 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.21ms)
+2026-01-31 10:25:17 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.51ms)
+2026-01-31 10:26:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:26:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:26:17 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.02ms)
+2026-01-31 10:26:17 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.27ms)
+2026-01-31 10:27:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:27:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:27:18 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.98ms)
+2026-01-31 10:27:18 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (236.20ms)
+2026-01-31 10:28:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:28:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:28:17 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.03ms)
+2026-01-31 10:28:17 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.67ms)
+2026-01-31 10:29:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:17 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.76ms)
+2026-01-31 10:29:17 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.71ms)
+2026-01-31 10:29:32 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:32 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:32 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.10ms)
+2026-01-31 10:29:32 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (229.68ms)
+2026-01-31 10:29:34 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:34 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:35 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (229.70ms)
+2026-01-31 10:29:35 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.96ms)
+2026-01-31 10:29:37 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:37 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:38 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.30ms)
+2026-01-31 10:29:38 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (229.85ms)
+2026-01-31 10:29:38 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:38 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:38 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.20ms)
+2026-01-31 10:29:38 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.70ms)
+2026-01-31 10:29:39 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:39 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:39 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.60ms)
+2026-01-31 10:29:39 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.99ms)
+2026-01-31 10:29:43 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:43 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:43 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.65ms)
+2026-01-31 10:29:43 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.31ms)
+2026-01-31 10:29:49 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:49 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:49 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.01ms)
+2026-01-31 10:29:49 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.66ms)
+2026-01-31 10:29:54 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:54 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:54 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.10ms)
+2026-01-31 10:29:54 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.57ms)
+2026-01-31 10:29:59 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:59 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:29:59 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.07ms)
+2026-01-31 10:29:59 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.36ms)
+2026-01-31 10:30:04 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:04 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:04 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.53ms)
+2026-01-31 10:30:04 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.29ms)
+2026-01-31 10:30:09 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:09 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:09 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.12ms)
+2026-01-31 10:30:09 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.65ms)
+2026-01-31 10:30:14 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:14 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:14 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.73ms)
+2026-01-31 10:30:14 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.09ms)
+2026-01-31 10:30:19 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:19 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:19 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.26ms)
+2026-01-31 10:30:19 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.58ms)
+2026-01-31 10:30:24 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:24 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:24 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.66ms)
+2026-01-31 10:30:24 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.19ms)
+2026-01-31 10:30:29 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:29 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:29 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.33ms)
+2026-01-31 10:30:29 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.45ms)
+2026-01-31 10:30:34 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:34 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:34 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.03ms)
+2026-01-31 10:30:34 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.18ms)
+2026-01-31 10:30:39 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:39 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:39 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.42ms)
+2026-01-31 10:30:39 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.44ms)
+2026-01-31 10:30:44 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:44 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:30:44 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.49ms)
+2026-01-31 10:30:44 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (229.88ms)
+2026-01-31 10:31:19 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:31:19 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:31:19 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (480.97ms)
+2026-01-31 10:31:19 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (470.56ms)
+2026-01-31 10:32:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:32:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:32:17 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (242.81ms)
+2026-01-31 10:32:17 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (233.15ms)
+2026-01-31 10:33:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:33:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:33:17 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.61ms)
+2026-01-31 10:33:17 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.57ms)
+2026-01-31 10:34:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:17 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:17 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.36ms)
+2026-01-31 10:34:17 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.89ms)
+2026-01-31 10:34:19 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:19 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:19 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (229.60ms)
+2026-01-31 10:34:19 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.81ms)
+2026-01-31 10:34:24 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:24 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:24 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.14ms)
+2026-01-31 10:34:24 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (229.36ms)
+2026-01-31 10:34:29 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:29 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:29 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (229.70ms)
+2026-01-31 10:34:29 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.15ms)
+2026-01-31 10:34:34 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:34 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:34 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.66ms)
+2026-01-31 10:34:34 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (233.26ms)
+2026-01-31 10:34:39 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:39 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:39 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.09ms)
+2026-01-31 10:34:39 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (244.16ms)
+2026-01-31 10:34:44 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:44 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:44 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (233.78ms)
+2026-01-31 10:34:44 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.22ms)
+2026-01-31 10:34:49 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:49 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:49 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (233.28ms)
+2026-01-31 10:34:49 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (236.60ms)
+2026-01-31 10:34:54 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:54 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:54 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.07ms)
+2026-01-31 10:34:54 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.95ms)
+2026-01-31 10:34:59 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:59 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:34:59 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (229.70ms)
+2026-01-31 10:34:59 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (230.43ms)
+2026-01-31 10:35:04 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:35:04 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:35:04 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.07ms)
+2026-01-31 10:35:04 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (233.84ms)
+2026-01-31 10:35:09 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:35:09 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:35:09 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (231.56ms)
+2026-01-31 10:35:09 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (238.21ms)
+2026-01-31 10:35:14 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:35:14 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:35:15 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (510.58ms)
+2026-01-31 10:35:15 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (512.80ms)
+2026-01-31 10:35:19 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:35:19 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:35:19 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (232.56ms)
+2026-01-31 10:35:19 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (239.19ms)
+2026-01-31 10:35:38 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:35:38 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:35:39 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (235.41ms)
+2026-01-31 10:35:39 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (236.67ms)
+2026-01-31 10:35:42 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:35:42 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (234.05ms)
+2026-01-31 10:35:43 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:35:43 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (232.25ms)
+2026-01-31 10:35:47 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:35:47 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (232.25ms)
+2026-01-31 10:35:52 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:35:52 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (232.01ms)
+2026-01-31 10:35:55 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/6744e3dc-ab74-4555-b6c9-de619b3d4a8a
+2026-01-31 10:35:55 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/6744e3dc-ab74-4555-b6c9-de619b3d4a8a
+2026-01-31 10:35:55 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/6744e3dc-ab74-4555-b6c9-de619b3d4a8a - 200 (246.43ms)
+2026-01-31 10:35:55 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/6744e3dc-ab74-4555-b6c9-de619b3d4a8a - 200 (250.22ms)
+2026-01-31 10:35:56 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/6744e3dc-ab74-4555-b6c9-de619b3d4a8a
+2026-01-31 10:35:56 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/6744e3dc-ab74-4555-b6c9-de619b3d4a8a
+2026-01-31 10:35:56 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/6744e3dc-ab74-4555-b6c9-de619b3d4a8a - 200 (231.89ms)
+2026-01-31 10:35:56 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/6744e3dc-ab74-4555-b6c9-de619b3d4a8a - 200 (242.10ms)
+2026-01-31 10:35:56 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/6744e3dc-ab74-4555-b6c9-de619b3d4a8a
+2026-01-31 10:35:57 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/6744e3dc-ab74-4555-b6c9-de619b3d4a8a
+2026-01-31 10:35:57 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/6744e3dc-ab74-4555-b6c9-de619b3d4a8a - 200 (260.86ms)
+2026-01-31 10:35:57 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/6744e3dc-ab74-4555-b6c9-de619b3d4a8a - 200 (327.77ms)
+2026-01-31 10:35:58 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:35:59 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (271.28ms)
+2026-01-31 10:35:59 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:00 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (304.95ms)
+2026-01-31 10:36:02 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116
+2026-01-31 10:36:02 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/000111e9-89c5-4e68-b2d4-5c835a4a1116
+2026-01-31 10:36:02 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116 - 200 (229.84ms)
+2026-01-31 10:36:02 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/000111e9-89c5-4e68-b2d4-5c835a4a1116 - 200 (461.42ms)
+2026-01-31 10:36:03 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116
+2026-01-31 10:36:03 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/000111e9-89c5-4e68-b2d4-5c835a4a1116
+2026-01-31 10:36:03 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116 - 200 (231.40ms)
+2026-01-31 10:36:04 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/000111e9-89c5-4e68-b2d4-5c835a4a1116 - 200 (526.58ms)
+2026-01-31 10:36:04 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116
+2026-01-31 10:36:04 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116 - 200 (229.39ms)
+2026-01-31 10:36:04 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/000111e9-89c5-4e68-b2d4-5c835a4a1116
+2026-01-31 10:36:05 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/000111e9-89c5-4e68-b2d4-5c835a4a1116 - 200 (486.13ms)
+2026-01-31 10:36:08 | INFO     | server | info:104 | 📨 Incoming: GET /api/videos/job/000111e9-89c5-4e68-b2d4-5c835a4a1116
+2026-01-31 10:36:08 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116
+2026-01-31 10:36:08 | INFO     | server | info:104 | ✅ Success: GET /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116 - 200 (231.63ms)
+2026-01-31 10:36:08 | INFO     | server | info:104 | ✅ Success: GET /api/videos/job/000111e9-89c5-4e68-b2d4-5c835a4a1116 - 200 (458.45ms)
+2026-01-31 10:36:09 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:09 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (233.49ms)
+2026-01-31 10:36:10 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:10 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (230.69ms)
+2026-01-31 10:36:15 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:15 | INFO     | server | info:104 | 📨 Incoming: DELETE /api/jobs/6744e3dc-ab74-4555-b6c9-de619b3d4a8a
+2026-01-31 10:36:15 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (234.24ms)
+2026-01-31 10:36:15 | INFO     | server | info:104 | ✅ Success: DELETE /api/jobs/6744e3dc-ab74-4555-b6c9-de619b3d4a8a - 200 (465.56ms)
+2026-01-31 10:36:16 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:16 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (252.44ms)
+2026-01-31 10:36:18 | INFO     | server | info:104 | 📨 Incoming: DELETE /api/jobs/6744e3dc-ab74-4555-b6c9-de619b3d4a8a
+2026-01-31 10:36:18 | WARNING  | server | warning:108 | ⚠️  Client Error: DELETE /api/jobs/6744e3dc-ab74-4555-b6c9-de619b3d4a8a - 404 (460.95ms)
+2026-01-31 10:36:19 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:19 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (231.97ms)
+2026-01-31 10:36:21 | INFO     | server | info:104 | 📨 Incoming: DELETE /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116
+2026-01-31 10:36:22 | INFO     | server | info:104 | ✅ Success: DELETE /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116 - 200 (477.54ms)
+2026-01-31 10:36:23 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:23 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (232.55ms)
+2026-01-31 10:36:25 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:25 | INFO     | server | info:104 | 📨 Incoming: DELETE /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116
+2026-01-31 10:36:25 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (251.84ms)
+2026-01-31 10:36:25 | WARNING  | server | warning:108 | ⚠️  Client Error: DELETE /api/jobs/000111e9-89c5-4e68-b2d4-5c835a4a1116 - 404 (603.22ms)
+2026-01-31 10:36:28 | INFO     | server | info:104 | 📨 Incoming: DELETE /api/jobs/5a0fce14-53e6-489f-92f6-126ff0a2eacf
+2026-01-31 10:36:29 | INFO     | server | info:104 | ✅ Success: DELETE /api/jobs/5a0fce14-53e6-489f-92f6-126ff0a2eacf - 200 (470.60ms)
+2026-01-31 10:36:29 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:29 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (231.38ms)
+2026-01-31 10:36:30 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:31 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (231.79ms)
+2026-01-31 10:36:31 | INFO     | server | info:104 | 📨 Incoming: DELETE /api/jobs/751d3f8d-ae48-49e4-891e-289393424103
+2026-01-31 10:36:32 | INFO     | server | info:104 | ✅ Success: DELETE /api/jobs/751d3f8d-ae48-49e4-891e-289393424103 - 200 (469.74ms)
+2026-01-31 10:36:32 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:33 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (241.24ms)
+2026-01-31 10:36:34 | INFO     | server | info:104 | 📨 Incoming: DELETE /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:36:34 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:34 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (229.80ms)
+2026-01-31 10:36:35 | INFO     | server | info:104 | ✅ Success: DELETE /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 200 (468.79ms)
+2026-01-31 10:36:35 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:36 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (233.31ms)
+2026-01-31 10:36:37 | INFO     | server | info:104 | 📨 Incoming: DELETE /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb
+2026-01-31 10:36:38 | WARNING  | server | warning:108 | ⚠️  Client Error: DELETE /api/jobs/cc91f895-a8ee-464c-a2e0-038d8782c7cb - 404 (461.37ms)
+2026-01-31 10:36:39 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:39 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (231.42ms)
+2026-01-31 10:36:41 | INFO     | server | info:104 | 📨 Incoming: DELETE /api/jobs/479de3c2-9364-4370-bc3e-653a148288ad
+2026-01-31 10:36:41 | INFO     | server | info:104 | ✅ Success: DELETE /api/jobs/479de3c2-9364-4370-bc3e-653a148288ad - 200 (474.67ms)
+2026-01-31 10:36:42 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:42 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (237.55ms)
+2026-01-31 10:36:44 | INFO     | server | info:104 | 📨 Incoming: DELETE /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5
+2026-01-31 10:36:44 | INFO     | server | info:104 | ✅ Success: DELETE /api/jobs/f712ff77-4781-4741-b6b6-2cf36dc20ff5 - 200 (500.60ms)
+2026-01-31 10:36:44 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:44 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (231.51ms)
+2026-01-31 10:36:45 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:45 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (237.14ms)
+2026-01-31 10:36:49 | INFO     | server | info:104 | 📨 Incoming: DELETE /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59
+2026-01-31 10:36:49 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:49 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (229.64ms)
+2026-01-31 10:36:50 | INFO     | server | info:104 | ✅ Success: DELETE /api/jobs/1fb12299-2d9d-4c2a-9af2-d04abd4ead59 - 200 (471.00ms)
+2026-01-31 10:36:50 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:51 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (233.95ms)
+2026-01-31 10:36:55 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:36:55 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (231.75ms)
+2026-01-31 10:37:00 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:37:00 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (239.29ms)
+2026-01-31 10:37:05 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:37:05 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (331.67ms)
+2026-01-31 10:37:10 | INFO     | server | info:104 | 📨 Incoming: GET /api/jobs
+2026-01-31 10:37:10 | INFO     | server | info:104 | ✅ Success: GET /api/jobs - 200 (231.66ms)

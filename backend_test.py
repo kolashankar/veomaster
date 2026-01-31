@@ -61,10 +61,10 @@ class GoogleFlowTester:
             return False
     
     def test_job_creation(self):
-        """Test POST /api/jobs/create"""
-        print("\n🔍 Testing Job Creation...")
+        """Phase 1: Test POST /api/jobs/create with specific job name"""
+        print("\n🔍 Phase 1: Testing Job Creation...")
         try:
-            payload = {"job_name": "Backend Test Job - VP Article"}
+            payload = {"job_name": JOB_NAME}
             response = self.session.post(
                 f"{BACKEND_URL}/jobs/create",
                 json=payload,
@@ -75,8 +75,7 @@ class GoogleFlowTester:
                 data = response.json()
                 self.job_id = data.get("job_id")
                 if self.job_id:
-                    self.log_success("job_creation", f"Job created with ID: {self.job_id}")
-                    self.log_success("mongodb_connection", "MongoDB connection working")
+                    self.log_success("job_creation", f"Job created with ID: {self.job_id}, Name: {JOB_NAME}")
                     return True
                 else:
                     self.log_error("job_creation", "No job_id in response")
@@ -89,12 +88,10 @@ class GoogleFlowTester:
                 except:
                     error_msg += f" - {response.text}"
                 self.log_error("job_creation", error_msg)
-                self.log_error("mongodb_connection", "MongoDB connection failed")
                 return False
                 
         except Exception as e:
             self.log_error("job_creation", f"Request failed: {str(e)}")
-            self.log_error("mongodb_connection", f"Connection error: {str(e)}")
             return False
     
     def test_file_upload(self):

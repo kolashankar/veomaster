@@ -334,7 +334,10 @@ test_plan:
     - "Google Flow Project Creation with Job Name"
     - "Batch Upload Prompts to Single Project"
     - "Refactored Main Workflow"
-  stuck_tasks: []
+  stuck_tasks:
+    - "Google Flow Project Creation with Job Name"
+    - "Batch Upload Prompts to Single Project"
+    - "Refactored Main Workflow"
   test_all: false
   test_priority: "high_first"
 

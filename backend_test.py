@@ -485,7 +485,7 @@ class GoogleFlowTester:
 
 
 if __name__ == "__main__":
-    tester = BackendTester()
+    tester = GoogleFlowTester()
     success, results, errors = tester.run_all_tests()
     
     # Exit with appropriate code

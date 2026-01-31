@@ -19,21 +19,21 @@ TEST_FILES = {
 }
 JOB_NAME = "Test VP Project"
 
-class BackendTester:
+class GoogleFlowTester:
     def __init__(self):
         self.session = requests.Session()
         self.job_id = None
         self.test_results = {
             "job_creation": False,
             "file_upload": False,
-            "job_status": False,
-            "video_records": False,
-            "job_listing": False,
-            "mongodb_connection": False,
-            "prompt_parsing": False,
-            "image_extraction": False
+            "job_start": False,
+            "database_records": False,
+            "backend_logs": False,
+            "workflow_verification": False,
+            "error_handling": False
         }
         self.errors = []
+        self.upload_response = None
         
     def log_success(self, test_name, message):
         print(f"✅ {test_name}: {message}")

@@ -320,27 +320,37 @@ test_plan:
 agent_communication:
   - agent: "main"
     message: |
-      🔧 CRITICAL FIX FOR GOOGLE FLOW VIDEO GENERATION
+      🔧 MAJOR WORKFLOW REFACTOR FOR GOOGLE FLOW VIDEO GENERATION
       
-      Root cause identified:
-      - Videos were being created in database with "pending" status
-      - BUT: The /api/jobs/{job_id}/start endpoint was never being called
-      - Result: Videos showed as "Queued for generation" but Google Flow automation never started
+      User Requirement:
+      - Create ONE project per job/folder with the folder name
+      - Upload all prompts to that single project in batch
+      - Start generation for the entire batch together
+      - This matches Google Flow's UI where multiple prompts can be added to one project
       
-      Fix implemented:
-      1) Added automatic call to jobAPI.startJob() in Dashboard.jsx after successful file upload
-      2) This triggers the background task: google_flow_service.generate_videos_for_job()
-      3) The service uses Playwright to automate Google Flow browser interactions
+      Changes Implemented:
+      1) ✅ Updated create_new_project() to accept optional project_name parameter
+      2) ✅ Added batch_upload_prompts() method to upload multiple image-prompt pairs
+      3) ✅ Added add_more_prompts() helper to click 'Add' button for additional prompts
+      4) ✅ Completely refactored generate_videos_for_job() workflow:
+         - Step 1: Create ONE project with job name
+         - Step 2: Configure settings (Portrait, 2 outputs, Veo 3.1 Fast)
+         - Step 3: Batch upload all prompts to single project
+         - Step 4: Start generation for entire batch
+         - Step 5: Videos queued in Google Flow for processing
       
-      Test preparation:
-      - Created folder1.zip with 2 test images (1.jpeg, 2.jpeg) - 6MB total
-      - Created prompts_test_2.txt with 2 prompts in Hindi/Devanagari
-      - Installed Playwright chromium browser for automation
-      - Updated .env with Google Flow credentials
+      Test Preparation:
+      - Created /app/test_folder.zip (490KB) with 2 images from user's uploaded assets
+      - Using /app/prompts_test_2.txt with 2 prompts
+      - Expected: 4 videos (2 outputs per prompt × 2 prompts)
       
-      Ready for comprehensive testing:
-      - Upload test files (2 images + 2 prompts)
-      - Verify startJob() is called automatically
-      - Monitor Google Flow automation (login, project creation, video generation)
-      - Confirm videos appear in Google Flow dashboard
-      - Expected: 4 videos (2 outputs per image)
+      Key Difference from Previous Approach:
+      - OLD: Created separate project for each video → inefficient, didn't match UI
+      - NEW: Creates ONE project per job → batch uploads → batch generates → efficient!
+      
+      Ready for Testing:
+      - Upload test_folder.zip + prompts_test_2.txt with job name "Test VP Project"
+      - Verify project is created with name "Test VP Project"
+      - Verify all 2 prompts are uploaded to single project
+      - Verify generation starts for all videos together
+      - Check Google Flow dashboard for project and queued videos

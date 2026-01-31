@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Comprehensive Backend API Testing Script
-Tests the complete video automation platform backend workflow
+Google Flow Video Generation - Complete End-to-End Testing
+Tests the NEW workflow: ONE project per job with batch upload and generation
 """
 
 import requests
@@ -9,13 +9,15 @@ import json
 import time
 import os
 from pathlib import Path
+import subprocess
 
 # Configuration
 BACKEND_URL = "https://flow-queue-fix.preview.emergentagent.com/api"
 TEST_FILES = {
-    "images_zip": "/app/folder1.zip",
-    "prompts_file": "/app/prompts_test.txt"
+    "images_zip": "/app/test_folder.zip",
+    "prompts_file": "/app/prompts_test_2.txt"
 }
+JOB_NAME = "Test VP Project"
 
 class BackendTester:
     def __init__(self):

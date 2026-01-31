@@ -197,18 +197,18 @@ frontend:
 
 metadata:
   created_by: "main_agent"
-  version: "1.1"
-  test_sequence: 2
+  version: "2.0"
+  test_sequence: 3
   run_ui: false
 
 test_plan:
   current_focus:
-    - "Verify MongoDB Atlas connection"
-    - "Test storage service with real credentials"
+    - "Verify complete upload workflow with real test files"
+    - "Test job creation and video generation start"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
 
 agent_communication:
   - agent: "main"
-    message: "✅ ALL ISSUES RESOLVED! Credentials migration complete, all syntax errors fixed, linting passed, both frontend and backend compiled successfully with ZERO errors. Services running perfectly. See PROJECT_HEALTH_CHECK.md for full report."
+    message: "✅ CRITICAL BUG FIXED! Root cause identified: 1) MongoDB credentials mismatch - updated to production credentials, 2) Case-sensitive regex in prompt parser - made case-insensitive with (?i) flag. Tested successfully with user's actual files (14 images + 14 prompts = 28 video records created)."

@@ -241,12 +241,12 @@ class GoogleFlowService:
     
     # =============== PROJECT CREATION & CONFIGURATION ===============
     
-    async def create_new_project(self) -> bool:
+    async def create_new_project(self, project_name: Optional[str] = None) -> bool:
         """
-        Create a new Flow project
+        Create a new Flow project with optional custom name
         """
         try:
-            logger.info("Creating new project...")
+            logger.info(f"Creating new project{f' with name: {project_name}' if project_name else ''}...")
             
             # Click "New project" button
             new_project_btn = await self.page.wait_for_selector('text="New project"', timeout=10000)
@@ -258,6 +258,31 @@ class GoogleFlowService:
             frames_to_video = await self.page.wait_for_selector('text="Frames to Video"', timeout=10000)
             await frames_to_video.click()
             await asyncio.sleep(2)
+            
+            # If project name is provided, try to rename the project
+            if project_name:
+                try:
+                    # Look for project name input/editable field (might vary based on UI)
+                    # Common patterns: contenteditable div, input with placeholder "Untitled project"
+                    project_name_selectors = [
+                        'input[placeholder*="project"]',
+                        'input[placeholder*="name"]',
+                        '[contenteditable="true"]',
+                        'input[type="text"]:visible',
+                    ]
+                    
+                    for selector in project_name_selectors:
+                        project_name_field = await self.page.query_selector(selector)
+                        if project_name_field and await project_name_field.is_visible():
+                            # Clear existing text and enter new name
+                            await project_name_field.click()
+                            await self.page.keyboard.press('Control+A')  # Select all
+                            await self.page.keyboard.type(project_name)
+                            await asyncio.sleep(1)
+                            logger.info(f"✅ Set project name to: {project_name}")
+                            break
+                except Exception as e:
+                    logger.warning(f"Could not set project name: {e}. Proceeding with default name.")
             
             logger.info("✅ Project created successfully")
             return True

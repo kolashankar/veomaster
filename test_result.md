@@ -278,9 +278,9 @@ metadata:
 
 test_plan:
   current_focus:
-    - "MongoDB Atlas Credentials Fix"
-    - "Case-Insensitive Prompt Parsing"
-    - "File Upload Endpoint Testing"
+    - "Google Flow Automation Start Endpoint"
+    - "Dashboard Auto-Start Integration"
+    - "Auto-Start Video Generation"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"

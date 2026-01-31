@@ -101,10 +101,25 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
-user_problem_statement: "Migrate all credentials from hardcoded values to .env files. Replace mock credentials with real production credentials for MongoDB Atlas, Cloudflare R2, and Telegram Bot."
+user_problem_statement: "Fix 400 error when uploading files to job endpoint. User encountered error 'Failed to create job: Request failed with status code 400' on production. Root cause was incorrect MongoDB credentials and case-sensitive prompt parsing regex."
 
 backend:
-  - task: "Credentials Migration - Backend .env Setup"
+  - task: "MongoDB Atlas Credentials Fix"
+    implemented: true
+    working: true
+    file: "/app/backend/.env"
+    stuck_count: 0
+    priority: "critical"
+    needs_retesting: false
+    status_history:
+      - working: false
+        agent: "user"
+        comment: "User reported 400 error on job upload endpoint. MongoDB authentication was failing."
+      - working: true
+        agent: "main"
+        comment: "Updated MONGO_URL with correct production credentials from Render. Authentication now successful."
+
+  - task: "Telegram Channel IDs Update"
     implemented: true
     working: true
     file: "/app/backend/.env"
@@ -114,55 +129,34 @@ backend:
     status_history:
       - working: true
         agent: "main"
-        comment: "All credentials successfully moved to .env: MongoDB Atlas, Google Flow, Cloudflare R2, Telegram Bot."
+        comment: "Updated Telegram channel IDs to match production configuration."
 
-  - task: "Config.py Environment Variables"
+  - task: "Case-Insensitive Prompt Parsing"
     implemented: true
     working: true
-    file: "/app/backend/config.py"
+    file: "/app/backend/services/video_processor.py"
     stuck_count: 0
-    priority: "high"
+    priority: "critical"
+    needs_retesting: false
+    status_history:
+      - working: false
+        agent: "main"
+        comment: "Regex pattern was case-sensitive, failed to match 'Prompt_1' format (only matched lowercase 'prompt_1')."
+      - working: true
+        agent: "main"
+        comment: "Added (?i) flag to regex pattern to make it case-insensitive. Now supports both 'Prompt_N' and 'prompt_N' formats."
+
+  - task: "File Upload Endpoint Testing"
+    implemented: true
+    working: true
+    file: "/app/backend/routes/jobs.py"
+    stuck_count: 0
+    priority: "critical"
     needs_retesting: false
     status_history:
       - working: true
         agent: "main"
-        comment: "All credentials now read from environment variables with proper fallbacks."
-
-  - task: "Session Model Credentials"
-    implemented: true
-    working: true
-    file: "/app/backend/models/session.py"
-    stuck_count: 0
-    priority: "medium"
-    needs_retesting: false
-    status_history:
-      - working: true
-        agent: "main"
-        comment: "Removed hardcoded Google Flow credentials, now using environment variables."
-
-  - task: "Python Linting Issues"
-    implemented: true
-    working: true
-    file: "/app/backend/services/"
-    stuck_count: 0
-    priority: "low"
-    needs_retesting: false
-    status_history:
-      - working: true
-        agent: "main"
-        comment: "Fixed 9 f-string linting issues using ruff auto-fix. All files now pass linting."
-
-  - task: "Backend Service Restart"
-    implemented: true
-    working: true
-    file: "N/A"
-    stuck_count: 0
-    priority: "high"
-    needs_retesting: false
-    status_history:
-      - working: true
-        agent: "main"
-        comment: "Backend successfully restarted with new credentials. API health check passed."
+        comment: "Successfully tested upload with user's actual files: folder1.zip (14 images) + prompts text file. Created 28 video records (2 per image)."
 
 frontend:
   - task: "Frontend JSX Syntax Fix"

@@ -124,15 +124,18 @@ backend:
 
   - task: "Batch Upload Prompts to Single Project"
     implemented: true
-    working: "NA"
+    working: false
     file: "/app/backend/services/google_flow_service.py"
-    stuck_count: 0
+    stuck_count: 1
     priority: "critical"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "NEW FEATURE: Added batch_upload_prompts() method to upload multiple image-prompt pairs to a single Google Flow project. Includes add_more_prompts() helper to click the 'Add' button for additional prompts."
+      - working: false
+        agent: "testing"
+        comment: "❌ BLOCKED: Cannot test batch upload functionality due to Google Flow login failure. The method exists and is properly implemented, but browser automation cannot access Google Flow service."
 
   - task: "Refactored Main Workflow"
     implemented: true

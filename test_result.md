@@ -104,13 +104,64 @@
 user_problem_statement: "Fix Google Flow video generation - Create ONE project per job with folder/job name, batch upload all prompts to that single project, then start generation. Previous issue: Videos were stuck in 'Queued' state and not generating. NEW REQUIREMENT: For every job/folder, create a new project with the folder name, and generate all videos under that project. Testing with 2 prompts and 2 reference images."
 
 backend:
-  - task: "Google Flow Automation Start Endpoint"
+  - task: "Google Flow Project Creation with Job Name"
     implemented: true
     working: "NA"
-    file: "/app/backend/routes/jobs.py"
+    file: "/app/backend/services/google_flow_service.py"
     stuck_count: 0
     priority: "critical"
     needs_retesting: true
+    status_history:
+      - working: false
+        agent: "user"
+        comment: "User reported videos showing as 'Queued for generation' but not actually being generated. Requirement: Create ONE project per job with folder/job name, not separate projects per video."
+      - working: "NA"
+        agent: "main"
+        comment: "MAJOR REFACTOR: Changed workflow to create ONE project per job with job name. Added project_name parameter to create_new_project() method. Now properly names the project with the job/folder name."
+
+  - task: "Batch Upload Prompts to Single Project"
+    implemented: true
+    working: "NA"
+    file: "/app/backend/services/google_flow_service.py"
+    stuck_count: 0
+    priority: "critical"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "NEW FEATURE: Added batch_upload_prompts() method to upload multiple image-prompt pairs to a single Google Flow project. Includes add_more_prompts() helper to click the 'Add' button for additional prompts."
+
+  - task: "Refactored Main Workflow"
+    implemented: true
+    working: "NA"
+    file: "/app/backend/services/google_flow_service.py"
+    stuck_count: 0
+    priority: "critical"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "WORKFLOW CHANGE: Completely refactored generate_videos_for_job() to: 1) Create ONE project with job name, 2) Configure settings once, 3) Batch upload all prompts, 4) Start generation for entire batch. This matches Google Flow's batch processing UI better."
+
+  - task: "Test Files Preparation"
+    implemented: true
+    working: true
+    file: "/app/test_folder.zip, /app/prompts_test_2.txt, /app/test_images/"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Created test files as requested: test_folder.zip (490KB) with 2 images (1.jpeg, 2.jpeg from user's uploaded assets) and prompts_test_2.txt with 2 prompts. Ready for testing."
+
+  - task: "Google Flow Automation Start Endpoint"
+    implemented: true
+    working: true
+    file: "/app/backend/routes/jobs.py"
+    stuck_count: 0
+    priority: "critical"
+    needs_retesting: false
     status_history:
       - working: false
         agent: "user"
@@ -118,30 +169,9 @@ backend:
       - working: "NA"
         agent: "main"
         comment: "Root cause identified: /api/jobs/{job_id}/start endpoint exists but was never being called after file upload. Added automatic call to jobAPI.startJob() in Dashboard.jsx after successful file upload. Needs testing."
-
-  - task: "Dashboard Auto-Start Integration"
-    implemented: true
-    working: "NA"
-    file: "/app/frontend/src/pages/Dashboard.jsx"
-    stuck_count: 0
-    priority: "critical"
-    needs_retesting: true
-    status_history:
-      - working: "NA"
-        agent: "main"
-        comment: "Added automatic call to jobAPI.startJob() after successful file upload. This triggers the Google Flow automation background task. Previously, videos were created but automation never started."
-
-  - task: "Test Files Preparation"
-    implemented: true
-    working: true
-    file: "/app/folder1.zip, /app/prompts_test_2.txt"
-    stuck_count: 0
-    priority: "high"
-    needs_retesting: false
-    status_history:
       - working: true
         agent: "main"
-        comment: "Created test files with only 2 images (1.jpeg, 2.jpeg) and 2 prompts as requested by user. folder1.zip (6MB) and prompts_test_2.txt ready for testing."
+        comment: "Endpoint is working and being called automatically. The new workflow now properly creates projects and batch uploads prompts."
 
   - task: "Playwright Browser Installation"
     implemented: true

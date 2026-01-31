@@ -101,7 +101,7 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
-user_problem_statement: "Fix Google Flow video generation - videos showing as 'Queued for generation' but not actually being generated in Google Flow. Root cause: After file upload, the /api/jobs/{job_id}/start endpoint was never being called to trigger the automation. FIXING: Adding automatic startJob() call after successful upload + testing with 2 images and 2 prompts."
+user_problem_statement: "Fix Google Flow video generation - Create ONE project per job with folder/job name, batch upload all prompts to that single project, then start generation. Previous issue: Videos were stuck in 'Queued' state and not generating. NEW REQUIREMENT: For every job/folder, create a new project with the folder name, and generate all videos under that project. Testing with 2 prompts and 2 reference images."
 
 backend:
   - task: "Google Flow Automation Start Endpoint"

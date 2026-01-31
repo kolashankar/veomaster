@@ -404,21 +404,25 @@ class GoogleFlowTester:
             return False
     
     def run_all_tests(self):
-        """Run all backend tests"""
+        """Run all Google Flow workflow tests"""
         print("=" * 80)
-        print("🚀 BACKEND API TESTING - Video Automation Platform")
+        print("🚀 GOOGLE FLOW VIDEO GENERATION - END-TO-END TESTING")
         print("=" * 80)
         print(f"Backend URL: {BACKEND_URL}")
         print(f"Test Files: {TEST_FILES}")
+        print(f"Job Name: {JOB_NAME}")
+        print(f"Expected: 2 images, 2 prompts, 4 videos (2 outputs per prompt)")
         
-        # Test sequence
+        # Test sequence matching the review request phases
         tests = [
             ("API Health Check", self.test_health_check),
-            ("Job Creation", self.test_job_creation),
-            ("File Upload (CRITICAL)", self.test_file_upload),
-            ("Job Status", self.test_job_status),
-            ("Video Records", self.test_video_records),
-            ("Job Listing", self.test_job_listing)
+            ("Phase 1: Job Creation", self.test_job_creation),
+            ("Phase 1: File Upload", self.test_file_upload),
+            ("Phase 1: Database Records", self.test_database_records),
+            ("Phase 2: Job Start", self.test_job_start),
+            ("Phase 3: Backend Logs", self.test_backend_logs),
+            ("Phase 4: Workflow Verification", self.test_workflow_verification),
+            ("Phase 5: Error Handling", self.test_error_handling)
         ]
         
         passed = 0
@@ -426,14 +430,18 @@ class GoogleFlowTester:
         
         for test_name, test_func in tests:
             try:
+                print(f"\n{'='*60}")
                 if test_func():
                     passed += 1
+                    print(f"✅ {test_name} - PASSED")
+                else:
+                    print(f"❌ {test_name} - FAILED")
             except Exception as e:
                 print(f"❌ {test_name}: Unexpected error - {str(e)}")
         
         # Summary
         print("\n" + "=" * 80)
-        print("📊 TEST SUMMARY")
+        print("📊 GOOGLE FLOW WORKFLOW TEST SUMMARY")
         print("=" * 80)
         
         for test_name, result in self.test_results.items():
@@ -447,19 +455,28 @@ class GoogleFlowTester:
             for error in self.errors:
                 print(f"   • {error}")
         
-        # Critical success criteria
-        critical_tests = ["job_creation", "file_upload", "mongodb_connection", "prompt_parsing", "image_extraction"]
+        # Success criteria for Google Flow workflow
+        critical_tests = ["job_creation", "file_upload", "database_records", "job_start"]
         critical_passed = all(self.test_results.get(test, False) for test in critical_tests)
         
         if critical_passed:
-            print("\n🎉 ALL CRITICAL TESTS PASSED!")
-            print("   ✅ MongoDB connection working")
-            print("   ✅ Case-insensitive prompt parsing working")
-            print("   ✅ File upload workflow complete")
-            print("   ✅ 14 images extracted correctly")
-            print("   ✅ 28 video records created")
+            print("\n🎉 CRITICAL WORKFLOW TESTS PASSED!")
+            print("   ✅ Job created with correct name")
+            print("   ✅ Files uploaded and parsed correctly")
+            print("   ✅ Database records created properly")
+            print("   ✅ Automation workflow started")
+            print(f"   ✅ Expected: 2 images → 2 prompts → 4 videos")
+            
+            if self.upload_response:
+                print(f"   📊 Upload Results: {self.upload_response}")
+            
+            print(f"\n🌐 Next Steps:")
+            print(f"   • Check Google Flow dashboard: https://labs.google/fx/tools/flow")
+            print(f"   • Look for project: '{JOB_NAME}'")
+            print(f"   • Verify 2 prompts uploaded to single project")
+            print(f"   • Monitor generation progress")
         else:
-            print("\n🚨 CRITICAL TESTS FAILED!")
+            print("\n🚨 CRITICAL WORKFLOW TESTS FAILED!")
             failed_critical = [test for test in critical_tests if not self.test_results.get(test, False)]
             for test in failed_critical:
                 print(f"   ❌ {test.replace('_', ' ').title()}")

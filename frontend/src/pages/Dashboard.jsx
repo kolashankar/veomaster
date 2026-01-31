@@ -74,6 +74,11 @@ const Dashboard = () => {
 
       toast.success('Files uploaded successfully!');
 
+      // Step 3: Start the automation process
+      toast.info('Starting video generation automation...');
+      await jobAPI.startJob(job.job_id);
+      toast.success('Video generation started! You can monitor progress in the job details.');
+
       // Reset form
       setJobName('');
       setImagesFile(null);

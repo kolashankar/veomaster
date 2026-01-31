@@ -288,44 +288,27 @@ test_plan:
 agent_communication:
   - agent: "main"
     message: |
-      ✅ CRITICAL BUG FIXED! 
+      🔧 CRITICAL FIX FOR GOOGLE FLOW VIDEO GENERATION
       
-      Root causes identified and resolved:
-      1) MongoDB credentials mismatch - Updated MONGO_URL to production credentials from Render
-      2) Case-sensitive regex in prompt parser - Added (?i) flag to make case-insensitive
+      Root cause identified:
+      - Videos were being created in database with "pending" status
+      - BUT: The /api/jobs/{job_id}/start endpoint was never being called
+      - Result: Videos showed as "Queued for generation" but Google Flow automation never started
       
-      Testing completed:
-      - Created test job successfully
-      - Uploaded user's actual files (folder1.zip with 14 images + prompts text file)
-      - All 28 video records created correctly (2 per image/prompt pair)
-      - Verified parsing handles both "Prompt_N" and "prompt_N" formats
+      Fix implemented:
+      1) Added automatic call to jobAPI.startJob() in Dashboard.jsx after successful file upload
+      2) This triggers the background task: google_flow_service.generate_videos_for_job()
+      3) The service uses Playwright to automate Google Flow browser interactions
       
-      Test files:
-      - folder1.zip: Contains 1.jpeg through 14.jpeg (ss.jpeg correctly ignored)
-      - prompts_test.txt: Contains Prompt_1 through Prompt_14 in Hindi/Devanagari
+      Test preparation:
+      - Created folder1.zip with 2 test images (1.jpeg, 2.jpeg) - 6MB total
+      - Created prompts_test_2.txt with 2 prompts in Hindi/Devanagari
+      - Installed Playwright chromium browser for automation
+      - Updated .env with Google Flow credentials
       
-      Ready for comprehensive backend testing with the testing agent.
-      Test script available at: /app/test_upload_workflow.sh
-  - agent: "testing"
-    message: |
-      🎉 BACKEND TESTING COMPLETE - ALL CRITICAL TESTS PASSED!
-      
-      Comprehensive testing results:
-      ✅ MongoDB Atlas connection: Working perfectly (no more auth errors)
-      ✅ Job creation (POST /api/jobs/create): Successful
-      ✅ File upload (POST /api/jobs/{job_id}/upload): CRITICAL FIX VERIFIED
-      ✅ Job status retrieval (GET /api/jobs/{job_id}): Working
-      ✅ Video records (GET /api/videos/job/{job_id}): 28 records created correctly
-      ✅ Job listing (GET /api/jobs): Working
-      ✅ Case-insensitive prompt parsing: Handles both "Prompt_N" and "prompt_N"
-      ✅ Image extraction: 14 images correctly extracted (ss.jpeg ignored)
-      ✅ Video record creation: 2 videos per image (indices 1 and 2)
-      
-      Test files used:
-      - /app/folder1.zip (44MB, 14 images)
-      - /app/prompts_test.txt (8KB, Hindi/Devanagari prompts)
-      
-      Backend logs show all API calls returning 200 status codes.
-      Created comprehensive test script: /app/backend_test.py
-      
-      🚀 READY FOR PRODUCTION: The 400 error issue is completely resolved!
+      Ready for comprehensive testing:
+      - Upload test files (2 images + 2 prompts)
+      - Verify startJob() is called automatically
+      - Monitor Google Flow automation (login, project creation, video generation)
+      - Confirm videos appear in Google Flow dashboard
+      - Expected: 4 videos (2 outputs per image)

@@ -371,6 +371,80 @@ class GoogleFlowService:
             logger.error(f"Failed to upload image/prompt: {e}")
             return False
     
+    async def add_more_prompts(self) -> bool:
+        """
+        Click the 'Add' or '+' button to add more prompts to the same project
+        """
+        try:
+            logger.info("Adding more prompts to the project...")
+            
+            # Look for "Add" or "+" button to add more prompts
+            add_button_selectors = [
+                'button:has-text("Add")',
+                'button[aria-label*="add"]',
+                'button:has-text("+")',
+            ]
+            
+            for selector in add_button_selectors:
+                add_button = await self.page.query_selector(selector)
+                if add_button and await add_button.is_visible():
+                    await add_button.click()
+                    await asyncio.sleep(2)
+                    logger.info("✅ Added new prompt slot")
+                    return True
+            
+            logger.warning("Could not find 'Add' button, may need UI adjustment")
+            return False
+            
+        except Exception as e:
+            logger.error(f"Failed to add more prompts: {e}")
+            return False
+    
+    async def batch_upload_prompts(self, videos: List[Video], job_images_folder: Path) -> bool:
+        """
+        Upload multiple image-prompt pairs to a single project in batch
+        """
+        try:
+            logger.info(f"Batch uploading {len(videos)} prompts to project...")
+            
+            # Group videos by image (since we have 2 outputs per prompt, we only need to upload once)
+            unique_videos = {}
+            for video in videos:
+                key = f"{video.prompt_number}_{video.image_filename}"
+                if key not in unique_videos:
+                    unique_videos[key] = video
+            
+            logger.info(f"Unique prompts to upload: {len(unique_videos)}")
+            
+            # Upload first prompt (project already created)
+            first_video = list(unique_videos.values())[0]
+            image_path = job_images_folder / first_video.image_filename
+            
+            if not await self.upload_reference_and_prompt(image_path, first_video.prompt_text):
+                return False
+            
+            # Add remaining prompts
+            for idx, video in enumerate(list(unique_videos.values())[1:], start=2):
+                logger.info(f"Adding prompt {idx}/{len(unique_videos)}")
+                
+                # Click 'Add' to add another prompt slot
+                if not await self.add_more_prompts():
+                    logger.warning(f"Could not add prompt slot {idx}, stopping batch upload")
+                    break
+                
+                # Upload image and prompt for this slot
+                image_path = job_images_folder / video.image_filename
+                if not await self.upload_reference_and_prompt(image_path, video.prompt_text):
+                    logger.warning(f"Failed to upload prompt {idx}, continuing...")
+                    continue
+            
+            logger.info(f"✅ Batch upload complete")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to batch upload prompts: {e}")
+            return False
+    
     async def start_generation(self) -> bool:
         """
         Click the Generate button to start video generation

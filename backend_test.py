@@ -95,8 +95,8 @@ class GoogleFlowTester:
             return False
     
     def test_file_upload(self):
-        """Test POST /api/jobs/{job_id}/upload - THE CRITICAL FIX"""
-        print("\n🔍 Testing File Upload (CRITICAL FIX)...")
+        """Phase 1: Test POST /api/jobs/{job_id}/upload with test files"""
+        print("\n🔍 Phase 1: Testing File Upload...")
         if not self.job_id:
             self.log_error("file_upload", "No job_id available")
             return False
@@ -121,8 +121,8 @@ class GoogleFlowTester:
             # Upload files
             with open(images_path, 'rb') as img_file, open(prompts_path, 'rb') as prompt_file:
                 files = {
-                    'images_folder': ('folder1.zip', img_file, 'application/zip'),
-                    'prompts_file': ('prompts_test.txt', prompt_file, 'text/plain')
+                    'images_folder': ('test_folder.zip', img_file, 'application/zip'),
+                    'prompts_file': ('prompts_test_2.txt', prompt_file, 'text/plain')
                 }
                 
                 response = self.session.post(
@@ -132,6 +132,7 @@ class GoogleFlowTester:
             
             if response.status_code == 200:
                 data = response.json()
+                self.upload_response = data
                 uploaded = data.get("uploaded", False)
                 image_count = data.get("image_count", 0)
                 prompt_count = data.get("prompt_count", 0)
@@ -140,21 +141,21 @@ class GoogleFlowTester:
                 if uploaded:
                     self.log_success("file_upload", f"Upload successful - Images: {image_count}, Prompts: {prompt_count}, Expected videos: {expected_videos}")
                     
-                    # Verify expected counts
-                    if image_count == 14:
-                        self.log_success("image_extraction", f"Correctly extracted 14 images (ss.jpeg ignored)")
+                    # Verify expected counts for test files
+                    if image_count == 2:
+                        print(f"✅ Correctly extracted 2 images from test_folder.zip")
                     else:
-                        self.log_error("image_extraction", f"Expected 14 images, got {image_count}")
+                        self.log_error("file_upload", f"Expected 2 images, got {image_count}")
                     
-                    if prompt_count == 14:
-                        self.log_success("prompt_parsing", f"Correctly parsed 14 prompts (case-insensitive Prompt_N format)")
+                    if prompt_count == 2:
+                        print(f"✅ Correctly parsed 2 prompts from prompts_test_2.txt")
                     else:
-                        self.log_error("prompt_parsing", f"Expected 14 prompts, got {prompt_count}")
+                        self.log_error("file_upload", f"Expected 2 prompts, got {prompt_count}")
                     
-                    if expected_videos == 28:  # 14 images * 2 videos per image
+                    if expected_videos == 4:  # 2 images * 2 videos per image
                         print(f"✅ Expected videos calculation correct: {expected_videos} (2 per image)")
                     else:
-                        self.log_error("file_upload", f"Expected 28 videos, got {expected_videos}")
+                        self.log_error("file_upload", f"Expected 4 videos, got {expected_videos}")
                     
                     return True
                 else:

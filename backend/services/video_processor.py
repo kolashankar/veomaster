@@ -30,8 +30,8 @@ class VideoProcessor:
             with open(file_path, 'r', encoding='utf-8') as f:
                 content = f.read()
             
-            # Match pattern: prompt_N: text
-            pattern = r'prompt_(\d+)\s*:\s*(.+?)(?=\nprompt_\d+|$)'
+            # Match pattern: prompt_N: text (case-insensitive to support Prompt_1 or prompt_1)
+            pattern = r'(?i)prompt_(\d+)\s*:\s*(.+?)(?=\nprompt_\d+|$)'
             matches = re.findall(pattern, content, re.DOTALL | re.MULTILINE)
             
             for match in matches:

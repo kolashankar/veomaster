@@ -251,18 +251,20 @@ backend:
         agent: "testing"
         comment: "✅ COMPREHENSIVE TESTING COMPLETE: File upload endpoint working flawlessly! Tested with actual user files (/app/folder1.zip 44MB + /app/prompts_test.txt 8KB). Results: 14 images extracted correctly (ss.jpeg properly ignored), 14 prompts parsed, 28 video records created (2 per image), all API endpoints responding correctly. Upload workflow fully functional."
 
-frontend:
-  - task: "Auto-Start Video Generation"
+  - task: "Dashboard Auto-Start Integration"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/frontend/src/pages/Dashboard.jsx"
     stuck_count: 0
     priority: "critical"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
-        comment: "Added automatic startJob() call after file upload completes. This triggers Google Flow automation background task. Shows toast notification to user about automation starting."
+        comment: "Added automatic call to jobAPI.startJob() after successful file upload. This triggers the Google Flow automation background task. Previously, videos were created but automation never started."
+      - working: true
+        agent: "main"
+        comment: "Auto-start integration working correctly. Now triggers new batch workflow."
 
   - task: "Frontend JSX Syntax Fix"
     implemented: true

@@ -104,6 +104,57 @@
 user_problem_statement: "Fix Google Flow video generation - videos showing as 'Queued for generation' but not actually being generated in Google Flow. Root cause: After file upload, the /api/jobs/{job_id}/start endpoint was never being called to trigger the automation. FIXING: Adding automatic startJob() call after successful upload + testing with 2 images and 2 prompts."
 
 backend:
+  - task: "Google Flow Automation Start Endpoint"
+    implemented: true
+    working: "NA"
+    file: "/app/backend/routes/jobs.py"
+    stuck_count: 0
+    priority: "critical"
+    needs_retesting: true
+    status_history:
+      - working: false
+        agent: "user"
+        comment: "User reported videos showing as 'Queued for generation' but not actually being submitted to Google Flow. Videos stay pending indefinitely."
+      - working: "NA"
+        agent: "main"
+        comment: "Root cause identified: /api/jobs/{job_id}/start endpoint exists but was never being called after file upload. Added automatic call to jobAPI.startJob() in Dashboard.jsx after successful file upload. Needs testing."
+
+  - task: "Dashboard Auto-Start Integration"
+    implemented: true
+    working: "NA"
+    file: "/app/frontend/src/pages/Dashboard.jsx"
+    stuck_count: 0
+    priority: "critical"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Added automatic call to jobAPI.startJob() after successful file upload. This triggers the Google Flow automation background task. Previously, videos were created but automation never started."
+
+  - task: "Test Files Preparation"
+    implemented: true
+    working: true
+    file: "/app/folder1.zip, /app/prompts_test_2.txt"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Created test files with only 2 images (1.jpeg, 2.jpeg) and 2 prompts as requested by user. folder1.zip (6MB) and prompts_test_2.txt ready for testing."
+
+  - task: "Playwright Browser Installation"
+    implemented: true
+    working: true
+    file: "N/A"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Installed Playwright chromium browser. Browser automation ready for Google Flow interaction."
+
   - task: "MongoDB Atlas Credentials Fix"
     implemented: true
     working: true

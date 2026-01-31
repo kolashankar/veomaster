@@ -106,11 +106,11 @@ user_problem_statement: "Fix Google Flow video generation - Create ONE project p
 backend:
   - task: "Google Flow Project Creation with Job Name"
     implemented: true
-    working: "NA"
+    working: false
     file: "/app/backend/services/google_flow_service.py"
-    stuck_count: 0
+    stuck_count: 1
     priority: "critical"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: false
         agent: "user"
@@ -118,6 +118,9 @@ backend:
       - working: "NA"
         agent: "main"
         comment: "MAJOR REFACTOR: Changed workflow to create ONE project per job with job name. Added project_name parameter to create_new_project() method. Now properly names the project with the job/folder name."
+      - working: false
+        agent: "testing"
+        comment: "❌ CRITICAL ISSUE: Google Flow automation fails at login step with 'Login timeout: Page.click: Timeout 10000ms exceeded. Call log: - waiting for locator(\"text=\\\"Sign in\\\"\")'. This appears to be due to Google Flow service being temporarily unavailable or UI changes. The backend API endpoints work perfectly, but browser automation cannot connect to Google Flow."
 
   - task: "Batch Upload Prompts to Single Project"
     implemented: true

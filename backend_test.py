@@ -11,7 +11,7 @@ import os
 from pathlib import Path
 
 # Configuration
-BACKEND_URL = "https://prompt-test-fix.preview.emergentagent.com/api"
+BACKEND_URL = "https://flow-queue-fix.preview.emergentagent.com/api"
 TEST_FILES = {
     "images_zip": "/app/folder1.zip",
     "prompts_file": "/app/prompts_test.txt"
